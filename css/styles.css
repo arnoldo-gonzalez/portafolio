@@ -509,6 +509,10 @@ body {
     align-items: center;
 }
 
+.main.full {
+    min-height: 78vh;
+}
+
 .proyects__proyect {
     position: relative;
     display: flex;

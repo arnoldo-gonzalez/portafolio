@@ -114,7 +114,7 @@ form.addEventListener("submit", async e => {
     const result = await sendMessage(data);
 
     if (result.ok) {
-        showAlert("!Gracias por ponerte en contacto¡", suported_types.SUCCESS);
+        showAlert("¡Gracias por ponerte en contacto!", suported_types.SUCCESS);
 
     } else {
         showAlert("Upss! Verfique su conexión e intentelo nuevamente.", suported_types.ERROR);
@@ -153,6 +153,14 @@ const proyectos = [
         status: 1,
         descripcion: "Esta fue mi primera página en react, y la cree con la api de rick and morty. Es bastante sencilla, simplemente permite buscar personajes por su nombre",
         repo: "https://github.com/arnoldo-gonzalez/react-vite-rickandmorty"
+    },
+    {
+        title: "Tailwind + Rick and Morty",
+        url: "https://tailwind-rick-and-morty.netlify.app/",
+        img: "./imgs/tailwind_rick_morty.png",
+        status: 1,
+        descripcion: "Sí, otra vez use el api de rick and morty, pero ahora para crear una sencilla pagina que use como primer acercamiento a tailwind. Implementa el modo oscuro y diversas clases de tailwind, fue una práctica muy satisfactoria y logre poner el práctica el responsive en tailwind.",
+        repo: "https://github.com/arnoldo-gonzalez/tailwind-rick-and-morty"
     },
     /* {
         title: "",
