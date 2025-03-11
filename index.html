@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Developer - Arnoldo González</title>
+</head>
+<body>
+    <div id="start_div"></div>
+
+    <header class="header">
+        <a href="#start_div" class="header__title">Dev. Arnoldo</a>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li class="header__li"><a href="#start_div" class="header__a">Inicio</a></li>
+                <li class="header__li"><a href="#about" class="header__a">Sobre mi</a></li>
+                <li class="header__li"><a href="./proyects.html#start_div" class="header__a">Proyectos</a></li>
+                <li class="header__li"><a href="#contacto" class="header__a">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <section class="section hero" id="start">
+            <div class="hero__mask"></div>
+            <img src="./imgs/code-8779051_1280.jpg" alt="Programador" class="hero__img">
+
+            <div class="hero__div">
+                <h1 class="hero__h1" data-related-index-s="hero-text" data-make-text-show-up>Bienvenido a mi mundo</h1>
+
+                <p class="hero__p" data-related-index-r="hero-text">Aqui, amamos el desarrollo web y la programación.</p>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+
+            <div class="about__container">
+
+                <article class="section__article">
+                    <h3 class="about__h3">¿Quien soy?</h3>
+                    <p class="about__p">
+                        Hola!, encantado de verte por aqui, espero te guste mi pequeño portafolio. Desde siempre me han gustado las computadoras, aunque cuando era pequeño solo las usaba para jugar.
+                        <br>
+                        <br>
+                        Sin embargo, un dia abri por accidente la terminal de mi computadora (que tenia sistema opetativo linux) y, ese dia, descrubri el emocionante mundo de la programación. 
+                        <br>
+                        <br>
+                        Mi primer lenguaje de programación fue shell (el de la terminal), pero rapidamente empece a ver videos y hacer practicas en html, css, y javascript. No tarde en enforcarme en este area, area en la que llegue a aprender numerosas herramientas, como react, node, mongoDB, php, tailwind, entre otras.
+                        <br>
+                        <br>
+                        Actualmente, soy un desarrollador web junior, y principalmente me enfoco en backend, y me alegra compartir con el mundo los proyectos mediante los cuales adquiri los conociminetos que tengo ahora. 
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="about__container">
+                <img class="section__img" src="./imgs/me.jpeg" alt="Foto de Arnoldo González">
+            </div>
+
+        </section>
+
+        <section id="contacto" class="section contact">
+
+            <h3 class="contact__h3">¡Enviame un mensaje!</h3>
+            <p class="contact__p">Prometo que lo contestare tan pronto como pueda</p>
+
+            <form class="contact__form" action="" id="send_message_form" method="get">
+    
+                <div class="contact__container">
+                    <input data-label-move type="email" required id="correo_electronico" value=""  name="correo_electronico">
+                    <label for="correo_electronico">Correo Electronico</label>
+                </div>
+    
+                <div class="contact__container">
+                    <input data-label-move type="text" required id="nombre" value=""  name="nombre">
+                    <label for="nombre">Nombre</label>
+                </div>
+
+                <div class="contact__container">
+                    <textarea data-label-move id="mensaje" required name="mensaje"></textarea>
+                    <label for="mensaje">Mensaje</label>
+                </div>
+    
+                <input type="submit" value="Mandar Mensaje" class="contact__submit">
+    
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__p">Página creada por: Arnoldo González</p>
+        <p class="footer__p" data-template-text>Todos los derechos recervados - {{YEAR}}</p>
+    </footer>
+
+    <div id="alerts_container" class="alerts"></div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
